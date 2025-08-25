@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Portafolio profesional de Jhoan Sebastian Cardenas - Desarrollador Web" />
+		<title>Jhoan Sebastian Cardenas - Portafolio</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	:root {
+		--color-black: #000000;
+		--color-dark-black: #111111;
+		--color-red: #ff0000;
+		--color-dark-red: #cc0000;
+		--color-light-red: #ff3333;
+		--color-white: #ffffff;
+		--color-gray: #333333;
+		--color-light-gray: #666666;
+		--color-dark-gray: #1a1a1a;
+		--gradient-red: linear-gradient(45deg, var(--color-red) 0%, var(--color-dark-red) 100%);
+		--gradient-black: linear-gradient(45deg, var(--color-black) 0%, var(--color-dark-black) 100%);
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		line-height: 1.6;
+		color: var(--color-white);
+		background: var(--color-black);
+		min-height: 100vh;
+		overflow-x: hidden;
+	}
+
+	/* Scrollbar personalizada */
+	::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--color-dark-gray);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--color-red);
+		border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--color-light-red);
+	}
+</style>
